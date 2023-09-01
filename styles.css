@@ -1,3 +1,74 @@
 html {
   background-color: aliceblue;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreboard {
+  display: flex;
+}
+
+.board-box {
+  display: flex;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+}
+
+.row-a {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  border: 1px solid black;
+}
+
+.row-b {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  border: 1px solid black;
+}
+
+.row-c {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  border: 1px solid black;
+}
+
+.column-1 {
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 1px solid black;
+}
+
+.column-2 {
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 1px solid black;
+}
+
+.column-3 {
+  grid-column-start: 3;
+  grid-row-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 1px solid black;
+}
