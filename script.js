@@ -7,7 +7,7 @@ const Player = (name, piece) => {
 const gameBoard = (() => {
   const board = [
     ["X", "O", "X"],
-    ["0", "X", "O"],
+    ["O", "X", "O"],
     ["X", "O", "X"],
   ];
   return {
@@ -20,12 +20,16 @@ const displayController = (() => {
   for (const row of gameBoard.board) {
     let j = 0;
     for (const tile of row) {
-      const board = document.querySelector(`.board`);
       const row = document.querySelector(`.row-${i}`);
-      const column = document.querySelector(`.column-${j}`);
-      const tile = document.createElement("p");
-      tile.textContent = gameBoard.board[i][j];
-      column.appendChild(tile);
+      const column = row.querySelector(`.column-${j}`);
+      const para = document.createElement("p");
+      if (gameBoard.board[i][j] == "X") {
+        para.classList.add("X");
+      } else {
+        para.classList.add("O");
+      }
+      para.textContent = gameBoard.board[i][j];
+      column.appendChild(para);
       console.log(i, j);
       console.log(gameBoard.board[i][j]);
       j++;
@@ -35,4 +39,3 @@ const displayController = (() => {
 })();
 
 displayController;
-// console.table(gameBoard.board[1][2]);

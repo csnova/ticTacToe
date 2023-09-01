@@ -19,56 +19,69 @@ html {
 
 .board {
   display: grid;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-rows: 200px 200px 200px;
   border: 1px solid black;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
 }
 
 .row-0 {
   grid-row-start: 1;
   grid-row-end: 2;
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  border: 1px solid black;
 }
 
 .row-1 {
   grid-row-start: 2;
   grid-row-end: 3;
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  border: 1px solid black;
 }
 
 .row-2 {
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+.row-0,
+.row-1,
+.row-2 {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 200px 200px 200px;
   border: 1px solid black;
 }
 
 .column-0 {
   grid-column-start: 1;
   grid-row-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  border: 1px solid black;
 }
 
 .column-1 {
   grid-column-start: 2;
   grid-row-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  border: 1px solid black;
 }
 
 .column-2 {
   grid-column-start: 3;
   grid-row-end: 4;
+}
+
+.column-0,
+.column-1,
+.column-2 {
   grid-row-start: 1;
   grid-row-end: 2;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.O {
+  color: blue;
+  font-size: 60px;
+  text-shadow: black 2px 0px 2px;
+}
+
+.X {
+  color: green;
+  font-size: 60px;
+  text-shadow: black 2px 0px 2px;
 }
