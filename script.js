@@ -4,19 +4,18 @@ const Player = (name, piece) => {
   return { getName, getPiece };
 };
 
-function removeElementsByClass(className) {
-  const elements = document.getElementsByClassName(className);
-  while (elements.length > 0) {
-    elements[0].parentNode.removeChild(elements[0]);
-  }
-}
-
 const gameBoard = (() => {
   const board = [
     ["", "", ""],
     ["", "", ""],
     ["", "", ""],
   ];
+  function removeElementsByClass(className) {
+    const elements = document.getElementsByClassName(className);
+    while (elements.length > 0) {
+      elements[0].parentNode.removeChild(elements[0]);
+    }
+  }
   function displayBoard() {
     let i = 0;
     for (const row of gameBoard.board) {
@@ -74,6 +73,7 @@ const gameBoard = (() => {
     }
   }
   return {
+    removeElementsByClass,
     displayBoard,
     board,
   };
