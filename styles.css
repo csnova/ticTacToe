@@ -74,6 +74,25 @@ html {
   align-items: center;
 }
 
+.newDiv {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-gap: 10px;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.btnX {
+  background-color: rgb(76, 155, 76);
+}
+
+.btnO {
+  background-color: rgb(114, 114, 255);
+}
+
 .O {
   color: blue;
   font-size: 60px;
