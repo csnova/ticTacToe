@@ -1,8 +1,10 @@
 html {
-  background-color: aliceblue;
+  background-color: rgb(0, 73, 75);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +12,27 @@ html {
 
 .scoreboard {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameOverText {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: black 2px 0px 2px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: 1px solid black;
+  text-shadow: black 1px 0px 1px;
+  border-radius: 10px;
 }
 
 .board-box {
@@ -18,71 +41,31 @@ html {
 }
 
 .board {
+  background-color: aliceblue;
   display: grid;
   grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
   border: 1px solid black;
   width: 600px;
   height: 600px;
 }
 
-.row-0 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.row-1 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.row-2 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.row-0,
-.row-1,
-.row-2 {
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  border: 1px solid black;
-}
-
-.column-0 {
-  grid-column-start: 1;
-  grid-row-end: 2;
-}
-
-.column-1 {
-  grid-column-start: 2;
-  grid-row-end: 3;
-}
-
-.column-2 {
-  grid-column-start: 3;
-  grid-row-end: 4;
-}
-
-.column-0,
-.column-1,
-.column-2 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  border: 1px solid black;
+.newDiv {
+  border: 5px solid grey;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.newDiv {
-  display: grid;
-  grid-template-columns: 50px 50px;
-  grid-gap: 10px;
-}
-
-button {
-  border: 1px solid black;
-  border-radius: 10px;
+.btnO,
+.btnX {
+  font-size: 75px;
+  font-weight: 700;
+  text-shadow: black 2px 0px 2px;
+  font-size: 20px;
+  font-weight: 700;
+  height: 50px;
+  width: 75px;
 }
 
 .btnX {
@@ -95,12 +78,21 @@ button {
 
 .O {
   color: blue;
-  font-size: 60px;
+  font-size: 75px;
+  font-weight: 700;
   text-shadow: black 2px 0px 2px;
 }
 
 .X {
   color: green;
-  font-size: 60px;
+  font-size: 75px;
+  font-weight: 700;
   text-shadow: black 2px 0px 2px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
 }

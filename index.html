@@ -11,26 +11,36 @@
       <h1>Tic Tac Toe</h1>
     </header>
 
-    <div class="scoreboard"></div>
+    <div class="topSection">
+      <div class="scoreboard">
+        <p class="gameOverText">Play Below</p>
+      </div>
+      <form class="add-character-form" id="addCharacterForm">
+        <input
+          class="input"
+          type="text"
+          id="playerOneName"
+          placeholder="Player One"
+          required
+          maxlength="100"
+        />
+        <input
+          class="input"
+          type="text"
+          id="playerOneTwo"
+          placeholder="Player Two"
+          required
+          maxlength="100"
+        />
+        <button class="submit" type="submit">Submit Players</button>
+      </form>
+    </div>
 
     <div class="board-box">
-      <div class="board">
-        <div class="row-0">
-          <div class="column-0"></div>
-          <div class="column-1"></div>
-          <div class="column-2"></div>
-        </div>
-        <div class="row-1">
-          <div class="column-0"></div>
-          <div class="column-1"></div>
-          <div class="column-2"></div>
-        </div>
-        <div class="row-2">
-          <div class="column-0"></div>
-          <div class="column-1"></div>
-          <div class="column-2"></div>
-        </div>
-      </div>
+      <div class="board"></div>
+    </div>
+    <div class="button-box">
+      <button class="reset">Reset</button>
     </div>
   </body>
   <script src="script.js"></script>
