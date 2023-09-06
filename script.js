@@ -84,15 +84,6 @@ const gameController = (() => {
   let currentPlayer = "p1";
   let winner;
 
-  // const playerName1 = document.querySelector("#playerOneName");
-  // const playerName2 = document.querySelector("#playerTwoName");
-  // const formField = document.querySelector("form");
-  // formField.addEventListener("submit", (e) => {
-  //   playerOne = Player(`${playerName1}`, "X");
-  //   playerTwo = Player(`${playerName2}`, "O");
-  //   formField.reset();
-  // });
-
   // Set Constants
   let remainingSpots = 9;
 
@@ -170,7 +161,6 @@ const gameController = (() => {
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       reset();
-      console.log("reset");
     });
   });
 

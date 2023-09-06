@@ -23,11 +23,11 @@ html {
   text-shadow: black 2px 0px 2px;
 }
 
-form {
+/* form {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 button {
   border: 1px solid black;
